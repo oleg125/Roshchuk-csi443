@@ -1,0 +1,31 @@
+body {
+    margin-left: 28px;
+    margin-right: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#2a2c2c;
+    background:#f3f7f7;
+    background-image: url();
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: justify;
+}
+.container{
+    width:150px;
+    height:150px;
+}
+.container img
+{
+    width:150px;
+    height:auto;
+}
+h1{
+    color:#114655;
+}
+.red_color{
+    color:#ff0000
+}
+#txt{
+    color:#07374d;
+    font:bold 18px arial, verdana;
+}
