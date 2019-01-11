@@ -1,41 +1,61 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles.css" rel="stylesheet" typeof="text/css" />
-    <script type="text/javascript" src="js/clock.js"></script>
+    <meta name="author" content="Oleg Roshchuk" />
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript" />
+    <script type="text/javascript" src="js/javascript.js"></script>
     <title>Oleg Roshchuk</title>
+
 </head>
 <body onload="startTime()">
-    <h1 id="txtGreeting"></h1>
+
     <div class="container">
-        <img src="images/profilepicture.jpg" />
+        <header class="page-header">
+            <div id="txtGreeting"></div>
+        </header>
     </div>
-    <p>
-        <span class="red_color">Name:</span> <strong>Oleg Roshchuk</strong>
-    </p>
-    <p>
-        <span class="red_color">Phone Number: </span><strong>(425) 235-2352</strong>
-    </p>
-    <p>
-        <span class="red_color">Email address:</span> <strong>xxxxx@rtc.edu</strong>
-</p>
-    <p>
-        <span class="red_color">
-            Bio:</span> I achieved my Associates degree in Computer Science at RTC with honors in 2017.
-            I am currently working on my Bachelor of Applied Science in Application Development.
-</p>
-    <p>
-        I've been able to create many interesting projects at RTC including a Sport Store (based on "Pro ASP.NET MVC 5" Adam Freeman, and used Bootstrap 4)  which I uploaded to Azure and can be seen in the following link:
-        <a href="https://oroshch.azurewebsites.net/" target="_blank"> <strong>Sport Store with Digital Assistant</strong></a>
-        This website can be navigated using your voice.
-    </p>
-    <p>
-        At RTC, I am currently working as an Office Assistant for Workstudy.
-        Also I've worked as a Tutor for some time, specializing in C# and Mathetmics. 
-        I am intrested in Machine Learnign.
-    </p> 
-    <div id="txt"></div>
+        <div class="container-fluid">           
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="container-img">
+                        <img src="images/profilepicture.jpg" />
+                    </div>
+                    <p>
+                        <span class="blue_color">Name:</span> <strong>Oleg Roshchuk</strong>
+                    </p>
+                    <p>
+                        <span class="blue_color">Phone Number: </span><strong>(425) 235-2352</strong>
+                    </p>
+                    <p>
+                        <span class="blue_color">Email address:</span> <strong>xxxxx@rtc.edu</strong>
+                    </p>
+                </div>
+                <div class="col-sm-8" id="col-p">
+                    <p>
+                        <span class="red_color">
+                            Bio:
+                        </span> I achieved my Associates degree in Computer Science at RTC with honors in 2017.
+                        I am currently working on my Bachelor of Applied Science in Application Development.
+                    </p>
+                    <p>
+                        I've been able to create many interesting projects at RTC including a Sport Store (based on "Pro ASP.NET MVC 5" Adam Freeman, and used Bootstrap 4)  which I uploaded to Azure and can be seen in the following link:
+                        <a href="https://oroshch.azurewebsites.net/" title="Sport Store with Digital Assistant" target="_blank" data-toggle="popover" data-trigger="hover"> <strong>Website with DA</strong></a>
+                        This website can be navigated using your voice.
+                    </p>
+                    <p>
+                        At RTC, I am currently working as an Office Assistant for Workstudy.
+                        Also I've worked as a Tutor for some time, specializing in C# and Mathetmics.
+                        I am intrested in Machine Learnign.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="container">
+            <div id="txt"></div>
+        </footer>
+    
 </body>
 </html>
