@@ -1,0 +1,37 @@
+body {
+    background-color: white;
+}
+
+.myname {
+    font-size: 48px;
+}
+
+.myimg {
+    padding: 5px;
+}
+
+@media /*only screen and*/ (max-width: 576px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .myname {
+        font-size: 25px;
+    }
+
+    .myimg {
+        padding: 15px;
+    }
+}
+
+@media (min-width:578px ) and (max-width: 991px) {
+    body {
+        background-color: lightgray;
+        color: black;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
