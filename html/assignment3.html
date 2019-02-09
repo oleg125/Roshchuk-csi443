@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta charset="utf-8" />
@@ -20,7 +20,8 @@
             <div id="txtGreeting"></div>
         </header>
         <a href="webresources.html"><strong>Web Resoureces</strong></a> is a link to Homework #1 page.<br />
-        <a href="/"><strong>Go Home (index.html)</strong></a> is a link to index.html (Home).
+        <a href="/"><strong>Go Home (index.html)</strong></a> is a link to index.html (Home).<br />
+        <a href="midterm.html"><strong>Midterm Project</strong></a> is a link to Midterm project.<br />
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -127,7 +128,7 @@
             </div>
 
             <!--Column with sub-columns lg xs-->
-            <div class="col-lg-3 col-sm-12 col-xs-12 d-md-none d-sm-none d-xs-block d-lg-block d-xl-none">     
+            <div class="col-lg-3 col-sm-12 col-xs-12 d-md-none d-sm-none d-xs-block d-lg-block d-xl-none">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
                         <h4 class="font-italic text-info">Movies:</h4>
@@ -176,19 +177,50 @@
             </div>
         </div>
     </div>
-    <footer class="container">
-        <div id="txt"></div> <p>
-    <a href="webresources.html"><strong>Web Resoureces</strong></a> is a link to Homework #1 page.<br/>
-    <a href="/"><strong>Go Home (index.html)</strong></a> is a link to index.html (Home).
-</p>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <h6 class="text-uppercase">Oleg Roshchuk</h6>
+                    <!--<div class="text-white" id="txt"></div>-->
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                    </p>
+                </div>
+                <hr class="clearfix">
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <h6 class="text-uppercase">Assignments</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="assignment3.html">Assignment 3</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <h6 class="text-uppercase">Projects</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="webresources.html">Web Resources</a>
+                        </li>
+                        <li>
+                            <a href="midterm.html">Midterm Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- Footer -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/javascript.js"></script>
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <span onclick="closeModal('myModal')" class="close">&times;</span>
-        <img  class="modal-content" id="img01" />
+        <img class="modal-content" id="img01" />
         <div id="caption"></div>
     </div>
 </body>
