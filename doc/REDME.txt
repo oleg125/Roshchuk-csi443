@@ -1,0 +1,2 @@
+http://35.247.110.63/html/midterm.html
+https://github.com/oleg125/roshchuk-csi443/blob/assignment-5/html/midterm.html
