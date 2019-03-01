@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<% include ../shared/_head_bootstrap_4 %>
+<body onload="startTime()">
+   <% include ../shared/_nav %>
+    <div class="container">
+        <header class="page-header">
+            <div class="sofia" id="txtGreeting"></div>
+        </header>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!--Column 1 'Contact info' xl, sm, md, lg, xl-->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-padding">
+                <div class="container-img mx-auto text-center">
+                    <!--<img id="myImg" onclick="openModal('myModal','img01','caption',this.src,this.alt)" src="images/profilepicture.jpg" />-->
+                    <img id="myImg" class="rounded" onclick="openModal('myModal','img01','caption',this.src,this.alt)"
+                         src="https://media.licdn.com/dms/image/C5603AQH44MgD32Nehg/profile-displayphoto-shrink_200_200/0?e=1553126400&v=beta&t=RAen1vOAhSszJi6gXU5SHTDz0dPf66FLvPcigW1b7_w" />
+
+                </div>
+                <p>
+                    <span class="text-primary">Name:</span> <strong class="myName">Oleg Roshchuk</strong>
+                </p>
+                <p>
+                    <span class="text-primary">Phone Number: </span><strong>(425) 235-2352</strong>
+                </p>
+                <p>
+                    <span class="text-primary">Email address:</span> <strong>xxxxx@rtc.edu</strong>
+                </p>
+            </div>
+            <!--Column 2 'Bio'  xl, sm, md, lg, xl -->
+            <div class="col-xl-8 col-lg-8 col-md-6 col-sm-6 col-xs-12" id="col-p">
+                <h4 class="text-info font-weight-bold bio">Biography</h4>
+                <p>
+                    <span class="text-danger txt-danger">
+                        Bio:
+                    </span> My name is Oleg Roshchuk, I was born in Ukraine.
+                    I'm married and have four childern.
+                    I really like the outdoors and every change I get I will take a trip to Eastern Washington. Also, I really like going to the Hood Canal.
+                    I achieved my Associates degree in Computer Science at RTC with honors in 2017.
+                    I am currently working on my Bachelor of Applied Science in Application Development.<br />
+                </p>
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2">
+                        <h4 class="sofia text-info font-weight-bold">MOVIES:</h4>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid rounded" id="myImg" onclick="openModal('myMovieModal','v01','caption','https://www.youtube.com/embed/FXhemAPni84',this.alt)" src="wwwroot/images/movies/anne.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">Anne with an "E"</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid" id="myImg" onclick="openModal('myMovieModal','v01','caption','https://www.youtube.com/embed/mIl-XY9t_Lw',this.alt)" src="wwwroot/images/movies/war-room.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">War Room</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid" id="myImg" onclick="openModal('myMovieModal','v01','caption','https://www.youtube.com/embed/I_9l7lEe-AA',this.alt)" src="wwwroot/images/movies/october-baby-.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">October Baby</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid" id="myImg" onclick="openModal('myMovieModal','v01','caption','https://www.youtube.com/embed/TcgZpus4GO4',this.alt)" src="wwwroot/images/movies/lovecomessoftly.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">love Come Softly</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+
+                        <img class="img-fluid" id="myImg" onclick="openModal('myMovieModal','v01','caption','https://www.youtube.com/embed/JFSNl54Wovc',this.alt)" src="wwwroot/images/movies/amish-grace.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">Amish Grace</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="sofia text-info font-weight-bold">BOOKS:</h4>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid" id="myImg" onclick="openModal('myModal','img01','caption',this.src,this.alt)" src="wwwroot/images/books/bible.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">Holy Bible</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid" id="myImg" onclick="openModal('myModal','img01','caption',this.src,this.alt)" src="wwwroot/images/books/god-with-you-everyday.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">God is With You Every Day</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid" id="myImg" onclick="openModal('myModal','img01','caption',this.src,this.alt)" src="wwwroot/images/books/spiritual-disciplines-life.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">Spiritual Disciplines for the Chistina Life</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid" id="myImg" onclick="openModal('myModal','img01','caption',this.src,this.alt)" src="wwwroot/images/books/seven-laws-learner.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">The Seven Laws of the Learner</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <img class="img-fluid" id="myImg" onclick="openModal('myModal','img01','caption',this.src,this.alt)" src="wwwroot/images/books/all-of-grace.jpg" />
+                        <div class="row">
+                            <div class="col acme font-weight-bold">All of Grace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 d-block d-lg-none">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 cutive">
+                        <h4 class="d-none d-sm-block acme text-info">Movies:</h4>
+                        <ul>
+                            <li>Anne with an "E"</li>
+                            <li>War Room</li>
+                            <li>October Baby</li>
+                            <li>love Come Softly</li>
+                            <li>Amish Grace</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 cutive">
+                        <h4 class="d-none d-sm-block acme text-info">Books:</h4>
+                        <ul>
+                            <li>Holy Bible</li>
+                            <li>God is With You Every Day</li>
+                            <li>Spiritual Disciplines for the Chistian Life</li>
+                            <li>The Seven Laws of the Learner</li>
+                            <li>All of Grace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% include ../shared/_footer %>
+      <!-- The Modal -->
+    <div id="myModal" class="modal" style="padding-top:98px;">
+        <span onclick="closeModal('myModal')" class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+    </div>
+    <!-- The Modal for Movies -->
+    <div id="myMovieModal" class="modal" style="padding-top:98px;">
+        <span onclick="closeModal('myMovieModal'); stopV('v01');" id="stop" class="close">&times;</span>
+        <div id="videoFrame" class="embed-responsive embed-responsive-16by9">
+            <iframe id="v01" class="embed-responsive-item" allowfullscreen></iframe>
+        </div>
+        <div id="caption"></div>
+    </div>
+</body>
+</html>
+
