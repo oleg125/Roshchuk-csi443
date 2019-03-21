@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta charset="utf-8" />
@@ -10,18 +10,58 @@
     <link href="../css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
-
-
 </head>
 <body onload="startTime()">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/profilepicture.jpg" alt="Logo" style="width:40px;" />
+            </a>
+            <a class="navbar-brand" href="/">
+                <span class="d-none d-sm-block"><strong>Responsive Web Disgn </strong></span>
+                <span class="d-sm-none d-block"><strong>CSI 443</strong></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assignment3.html">Assignment 3</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Midterm
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="midterm.html">Midterm Bootstrap 3</a>
+                            <a class="dropdown-item" href="midterm_b4.html">Midterm Bootstrap 4</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Navigation-->
 
     <div class="container">
         <header class="page-header">
-            <div id="txtGreeting"></div>
+            <div class="sofia" id="txtGreeting"></div>
         </header>
-        <a href="webresources.html"><strong>Web Resoureces</strong></a> is a link to Homework #1 page.<br />
-        <a href="/"><strong>Go Home (index.html)</strong></a> is a link to index.html (Home).<br />
-        <a href="midterm.html"><strong>Midterm Project</strong></a> is a link to Midterm project.<br />
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -179,7 +219,7 @@
     </div>
     <!-- Footer -->
     <footer class="py-5 bg-dark text-white">
-        <div class="container-fluid text-center">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-md-4 mt-md-0 mt-3">
                     <h6 class="text-uppercase">Oleg Roshchuk</h6>
@@ -196,6 +236,9 @@
                         <li>
                             <a href="assignment3.html">Assignment 3</a>
                         </li>
+                        <li>
+                            <a href="review.html">Review</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -206,7 +249,13 @@
                             <a href="webresources.html">Web Resources</a>
                         </li>
                         <li>
-                            <a href="midterm.html">Midterm Project</a>
+                            <div class="dropup">
+                                <a href="#" class="dropup dropdown-toggle" data-toggle="dropdown">Midterm Project</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="midterm.html">Midterm Bootstrap 3</a>
+                                    <a class="dropdown-item" href="midterm_b4.html">Midterm Bootstrap 4</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>

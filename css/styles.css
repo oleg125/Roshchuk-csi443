@@ -1,6 +1,8 @@
-
+html {
+    padding-top:12px;
+    scroll-behavior: smooth;
+}
 body {
-    
     padding-top: 52px;
     padding-left: 10px;
     padding-right: 10px;
@@ -142,7 +144,7 @@ strong {
 }
 /* The Close Button */
 .close {
-    position: absolute;
+    /*position: absolute;*/
     top: 15px;
     right: 35px;
     color: #f1f1f1;
@@ -252,12 +254,13 @@ strong {
     }
 }
 
-img {
+/*img {
     width: 100%;
     height: auto;
-}
+}*/
 
 /*media query*/
+/*Extra small*/
 @media /*only screen and*/ (max-width: 576px) {
     body {
         background-color: #2d3035;
@@ -282,41 +285,188 @@ img {
     .bio{
         font-family:Cuprum;
     }
+    /*for review*/
+    .img-left {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
 
+    .img-right {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .text-left {
+      
+    }
+
+    .text-right {
+       
+    }
+    .img-m {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .google_text {
+        font-family: Cuprum;
+    }
+}
+/*medium - portrait*/
+@media (min-width:577px ) and (max-width: 768px) {
+    /*for review*/
+    .img-left {
+        margin-bottom: 10px;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+       
+    }
+
+    .img-right {
+        margin-bottom: 10px;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+     
+    }
+    .text-left {
+        
+    }
+
+    .text-right {
+       
+    }
+    .img-m {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .google_text {
+        font-family: Cuprum;
+    }
+}
+/*medium - landscape*/
+@media (min-width:768px ) and (max-width: 991px) {
+    /*for review*/
+    .img-left {
+        float: left;
+        margin:10px;      
+    }
+
+    .img-right {
+        float: right;
+        margin:10px;       
+    }
+    .text-left {
+       
+    }
+
+    .text-right {
+        
+    }
+    .google_text {
+        font-family: Acme;
+    }
+    .img-m {      
+        height: auto;
+        width: auto;
+        max-width: 50%;
+        max-height: 50%;
+    } 
 }
 
 @media (min-width:577px ) and (max-width: 991px) {
     body {
-        background-color: lightgray;
-        color: #343c3e;
-    }
+            background-color: lightgray;
+            color: #343c3e;
+        }
 
     ol, ul {
-        list-style: none;
-        font-weight: bolder;
-    }
-    .bio{
-        font-family:Acme;
-    }
+            list-style: none;
+            font-weight: bolder;
+        }
+
+    .bio {
+            font-family: Acme;
+        }
+
     #txt {
-        text-shadow: 4px 2px 8px darkgray;
-    }
+            text-shadow: 4px 2px 8px darkgray; }
 }
-@media (min-width:991px){
-    body{
-        background-color:white;
+/*lagre and extra lagre*/
+@media (min-width:991px) {
+    body {
+            background-color: white;
     }
-    .myName{
-        font-size:48px;
-        font-family:Cuprum;
+
+    .myName {
+            font-size: 48px;
+            font-family: Cuprum;
     }
-    .text-primary{
-        font-weight:bold;
+
+    .text-primary {
+            font-weight: bold;
     }
-    .txt-danger{
-        font-weight:bold;
+
+    .txt-danger {
+            font-weight: bold;
     }
-    .bio{
-        font-family:Sofia;
+
+    .bio {
+            font-family: Sofia;
     }
+    /*for review*/
+    .img-left {
+        float: left;
+        margin: 10px;     
+    }
+    .img-right {
+        float: right;
+        margin: 10px;      
+    }
+    .text-left {
+        font-family: Cutive;      
+        overflow:hidden;
+       
+    }
+    .text-right {
+        font-family: Cutive;         
+        overflow:hidden;
+    }
+   
+    .google_text{
+        font-family: Cutive;
+    }   
+    .img-m {
+        height: auto;
+        width: auto;
+        max-width: 50%;
+        max-height:50%;
+    }  
+}
+
+
+.nav-top {
+    margin-top: 66px;
+
+}
+.text-m {
+    text-indent:2em;
+    display: inline-block;
+    text-align: left;
+    padding-right: 35px;
+}
+.img-icon{
+    width:5%;
+    height:auto;
 }
